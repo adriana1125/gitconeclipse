@@ -48,6 +48,16 @@ public class Guigit extends JFrame {
 		});
 		btnsaludoadri.setBounds(162, 99, 117, 23);
 		contentPane.add(btnsaludoadri);
+		
+		JButton btnNewButton = new JButton("Saludo Orla");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showConfirmDialog(btnNewButton, "Hola soy Orla, hablando desde la rama de Orla :p");
+				
+			}
+		});
+		btnNewButton.setBounds(179, 160, 89, 23);
+		contentPane.add(btnNewButton);
 
 	}
 }
