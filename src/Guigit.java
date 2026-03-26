@@ -3,7 +3,10 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JOptionPane;
 public class Guigit extends JFrame {
 
 	private static final long serialVersionUID = 1L;
@@ -34,7 +37,17 @@ public class Guigit extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnsaludoadri = new JButton("saludo master");
+		btnsaludoadri.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(btnsaludoadri,"hola desde el master");
+	
+			}
+		});
+		btnsaludoadri.setBounds(162, 99, 117, 23);
+		contentPane.add(btnsaludoadri);
 
 	}
-
 }
